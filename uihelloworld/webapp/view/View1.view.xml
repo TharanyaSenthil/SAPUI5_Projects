@@ -1,0 +1,18 @@
+<mvc:View
+    controllerName="uihelloworld.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page id="page" title="Hello World">
+        <content>
+            <VBox  id="vbox" class="sapUiSmallMargin">
+                <Label id="label" text="Hello World"/>
+                <Button 
+                    id="button"
+                    text="Click Me"
+                    press="onClick"/>
+            </VBox>
+        </content>
+    </Page>
+
+</mvc:View>

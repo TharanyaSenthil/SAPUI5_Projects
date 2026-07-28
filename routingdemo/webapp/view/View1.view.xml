@@ -1,0 +1,24 @@
+<mvc:View
+    controllerName="routingdemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+<Page id="page1" title="HomePage">
+
+    <content>
+
+        <Input
+            id="idInput"
+            placeholder="Text User"
+            value="{user>/User/name}" />
+
+        <Button
+            id="button1"
+            text="DetailsPage"
+            press="onNext"/>
+
+    </content>
+
+</Page>
+
+</mvc:View>

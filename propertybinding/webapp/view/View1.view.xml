@@ -1,0 +1,79 @@
+<mvc:View
+    controllerName="propertybinding.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page id="page" title="Icon Tab Filter Demo">
+
+        <content>
+
+            <IconTabBar id="bar1" expandable="false">
+
+                <!-- Product Details -->
+
+                <items>
+
+                    <IconTabFilter id="filter1"
+                        icon="sap-icon://product"
+                        text="Product">
+
+                        <VBox id="vbox1" class="sapUiMediumMargin">
+
+                            <Text id="txt1" text="ProductID : {prod>/ProdDetails/ProdId}"/>
+
+                            <Text id="txt2" text="ProductName : {prod>/ProdDetails/ProdName}"/>
+
+                            <Text id="txt3" text="Quantity : {prod>/ProdDetails/Quantity}"/>
+
+                            <Text id="txt4" text="UOM : {prod>/ProdDetails/uom}"/>
+
+                        </VBox>
+
+                    </IconTabFilter>
+
+                    <!-- Supplier Details -->
+
+                    <IconTabFilter
+                        id="filter2"
+                        icon="sap-icon://shipping-status"
+                        text="Supplier">
+
+                        <VBox id="vbox2" class="sapUiMediumMargin">
+
+                            <Text id="txt5" text="SupplierName : {prod>/SupplierDetails/SupplierName}"/>
+
+                            <Text id="txt6" text="ShippedDate : {prod>/SupplierDetails/ShippedDate}"/>
+
+                        </VBox>
+
+                    </IconTabFilter>
+
+                    <!-- Other Details -->
+
+                    <IconTabFilter id="filter3"
+                        icon="sap-icon://sales-order"
+                        text="Others">
+
+                        <VBox id="vbox3" class="sapUiMediumMargin">
+
+                            <Text id="txt7" text="Price : {prod>/OtherDetails/Price}"/>
+
+                            <Text id="txt8" text="Currency : {prod>/OtherDetails/Currency}"/>
+
+                            <Text id="txt9" text="Status : {prod>/OtherDetails/Status}"/>
+
+                            <Text id="txt0" text="Dimensions : {prod>/OtherDetails/Dimensions}"/>
+
+                        </VBox>
+
+                    </IconTabFilter>
+
+                </items>
+
+            </IconTabBar>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

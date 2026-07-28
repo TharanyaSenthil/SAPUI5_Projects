@@ -1,0 +1,44 @@
+{
+  "Products": [
+    {
+      "ProductName": "Prd1",
+      "Quantity": 21,
+      "ExtendedPrice": 10.5,
+      "ShipperName": "Suppl1.",
+      "ShippedDate": "2015-05-01T00:00:00",
+      "Status": "A"
+    },
+    {
+      "ProductName": "Prd2",
+      "Quantity": 4,
+      "ExtendedPrice": 10.9,
+      "ShipperName": "Suppl2",
+      "ShippedDate": "2015-04-18T00:00:00",
+      "Status": "B"
+    },
+    {
+      "ProductName": "Prd3",
+      "Quantity": 3,
+      "ExtendedPrice": 5.5,
+      "ShipperName": "Suppl3",
+      "ShippedDate": "2015-01-02T00:00:00",
+      "Status": "B"
+    },
+    {
+      "ProductName": "Prd4",
+      "Quantity": 2,
+      "ExtendedPrice": 7.8,
+      "ShipperName": "Suppl4",
+      "ShippedDate": "2015-05-12T00:00:00",
+      "Status": "C"
+    },
+    {
+      "ProductName": "Prd5",
+      "Quantity": 1,
+      "ExtendedPrice": 1.7,
+      "ShipperName": "Suppl5",
+      "ShippedDate": "2015-07-27T00:00:00",
+      "Status": "A"
+    }
+  ]
+}

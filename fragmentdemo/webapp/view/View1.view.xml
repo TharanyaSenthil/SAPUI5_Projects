@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="fragmentdemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m">
+
+    <Page
+        id="page"
+        title="{i18n>title}">
+
+        <content>
+
+            <core:Fragment
+                id="fragment1"
+                type="XML"
+                fragmentName="fragmentdemo.fragments.ImageDemo"/>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

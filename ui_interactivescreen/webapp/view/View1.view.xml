@@ -1,0 +1,27 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="uiinteractivescreen.controller.View1">
+
+    <Page id="page1" title="Login Page">
+        <content>
+
+            <VBox id="vbox1" class="sapUiMediumMargin">
+
+                <Label id="lblWelcome" text="Welcome!!"/>
+
+                <HBox id="hbox1" class="sapUiSmallMarginTop">
+                    <Label id="lblUser" text="UserName:" width="120px"/>
+                    <Input id="txtUser" placeholder="Enter Username..." required="true" width="300px"/>
+                </HBox>
+
+                <HBox id="hbox2" class="sapUiSmallMarginTop">
+                    <Label id="lblPwd" text="Password:" width="120px"/>
+                    <Input id="txtPwd" type="Password" placeholder="Enter Password..." required="true" width="300px"/>
+                </HBox>
+            </VBox>
+
+            <Button xmlns="sap.m" text="Logon" id="btnLogon"  press="onLogon"/>
+            <Button xmlns="sap.m" text="Reset" id="btnReset" press="onReset"/>
+
+        </content>
+    </Page>
+
+</mvc:View>

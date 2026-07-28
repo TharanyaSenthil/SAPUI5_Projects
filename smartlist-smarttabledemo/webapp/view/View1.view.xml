@@ -1,0 +1,79 @@
+<mvc:View
+    controllerName="smartlistsmarttabledemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+    xmlns:smartList="sap.ui.comp.smartlist"
+    xmlns:smartTable="sap.ui.comp.smarttable">
+
+    <Page id="page" title="SmartList &amp; SmartTable Demo">
+
+        <content>
+            <!-- Tabs -->
+            <IconTabBar
+                id="iconTabBar"
+                expandable="false"
+                selectedKey="List">
+                <items>
+
+                    <!-- Smart List -->
+                    <IconTabFilter id="filter1"
+                        key="List"
+                        text="Smart List"
+                        icon="sap-icon://list">
+                        
+                    <smartList:SmartList
+                            id="ItemsST"
+                            entitySet="Products"
+                            header="Product List"
+                            showRowCount="true"
+                            showFullScreenButton="true"
+                            enableAutoBinding="true"
+                            selectFields="ProductID,ProductName,UnitPrice,UnitsInStock">
+
+                            <smartList:listItemTemplate>
+
+                                <StandardListItem id="item1"
+                                    title="{ProductName}"
+                                    info="{UnitPrice}"
+                                    description="{= 'ID : ' + ${ProductID}}"/>
+
+                            </smartList:listItemTemplate>
+
+                        </smartList:SmartList>
+
+                    </IconTabFilter>
+
+                    <!-- Smart Table -->
+
+                    <IconTabFilter id="filter2"
+                        key="Table"
+                        text="Smart Table"
+                        icon="sap-icon://table-view">
+
+                        <smartTable:SmartTable
+                            id="smartTable"
+                            smartFilterId="smartFilterBar"
+                            tableType="ResponsiveTable"
+                            entitySet="Products"
+                            header="Product Details"
+                            initiallyVisibleFields="ProductID,ProductName,UnitPrice,UnitsInStock"
+                            editable="false"
+                            useVariantManagement="true"
+                            useTablePersonalisation="true"
+                            showRowCount="true"
+                            enableExport="true"
+                            enableAutoBinding="true"
+                            persistencyKey="SmartTableKey"/>
+
+                    </IconTabFilter>
+
+                </items>
+
+            </IconTabBar>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

@@ -1,0 +1,21 @@
+<mvc:View controllerName="propertybindingdemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <VBox id="vboxDetails">
+
+    <Label id="label1" text="Employee ID:"/>
+    <Input id="input1" editable="false"
+           value="{empdetails>/ID}"/>
+
+    <Label id="label2" text="Employee Name:"/>
+    <Input id="input2" editable="false"
+           value="{empdetails>/Name}"/>
+
+    <Label id="label3" text="Employee Description:"/>
+    <Input id="input3" editable="false"
+           value="{empdetails>/Desc}"/>
+
+</VBox>
+    </Page>
+</mvc:View>

@@ -1,0 +1,13 @@
+{
+    "ID":"SAP11",
+
+    "Name":"LKM USER1",
+
+    "Desc":"SAP LKM SAPUI5 Training",
+
+    "Skill": {
+        "SkillName" : "SAPUI5",
+        "Level" : "Expert"
+    }
+
+}

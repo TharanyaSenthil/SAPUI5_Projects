@@ -1,0 +1,40 @@
+<mvc:View controllerName="elementbindingdemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:l="sap.ui.layout"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <List id="_IDGenList1" headerText="{Employee Details}" class="sapUiResponsiveMargin" width="auto" items="{empdetails>/Information}">
+
+<items>
+
+<ObjectListItem id="_IDGenObjectListItem1" press=".onItemSelected" type="Active" title="{empdetails>EmpID} {empdetails>EmpName}"/>
+
+</items>
+
+</List>
+
+<Panel id="empDetailsPanel" headerText="{i18n>panel4HeaderText}" class="sapUiResponsiveMargin" width="auto">
+
+<l:Grid id="_IDGenGrid1" defaultSpan="L3 M6 S12" containerQuery="true">
+
+<Label id="_IDGenLabel1" text="Employee ID"/>
+
+<Input id="_IDGenInput1" value="{empdetails>EmpID}"/>
+
+<Label id="_IDGenLabel2" text="Employee Name"/>
+
+<Input id="_IDGenInput2" value="{empdetails>EmpName}"/>
+
+<Label id="_IDGenLabel3" text="Skill"/>
+
+<Input id="_IDGenInput3" value="{empdetails>Skill}"/>
+
+<Label id="_IDGenLabel4" text="Gender"/>
+
+<Input id="_IDGenInput4" value="{empdetails>Gender}"/>
+
+</l:Grid>
+
+</Panel>
+    </Page>
+</mvc:View>

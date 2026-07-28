@@ -1,0 +1,11 @@
+<mvc:View controllerName="resourcemodeldemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <VBox id="vbox">
+    <Text id="txt1" text="{i18n>emp1}"></Text>
+    <Text id="txt2" text="{i18n>cust}"></Text>
+    <Text id="txt3" text="{i18n>vend}"></Text>
+    </VBox>
+    </Page>
+</mvc:View>

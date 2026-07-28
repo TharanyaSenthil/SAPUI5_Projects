@@ -1,0 +1,19 @@
+<mvc:View controllerName="aggregationbindingdemo.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <List id="_IDGenList1" headerText="{Employee Details}" class="sapUiResponsiveMargin" width="auto" items="{empdetails>/Information}">
+
+<items>
+
+<ObjectListItem id="_IDGenObjectListItem1" press=".onItemSelected" type="Active" title="{empdetails>EmpID} {empdetails>EmpName}">
+
+<ObjectAttribute id="empskill" text="{empdetails>Skill}" />
+
+</ObjectListItem>
+
+</items>
+
+</List>
+    </Page>
+</mvc:View>
